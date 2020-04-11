@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <nuxt />
+  <div class="app">
+    <header class="app__bar">
+      <h1 class="app__title">
+        COVID-19 Estimator Online - SDG
+      </h1>
+    </header>
+    <main class="app__content">
+      <nuxt />
+    </main>
   </div>
 </template>
 
