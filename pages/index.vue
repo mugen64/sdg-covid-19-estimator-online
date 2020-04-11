@@ -5,11 +5,12 @@
 </template>
 
 <script>
-import { Estimator } from '~/logic';
-import SampleData from '~/data';
 export default {
   data: () => ({
-    estimate: Estimator(SampleData[0])
-  })
+    estimate: {}
+  }),
+  created() {
+    // this.estimate = this.$Estimator({});
+  }
 };
 </script>
