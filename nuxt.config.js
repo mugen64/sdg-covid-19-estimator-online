@@ -81,5 +81,8 @@ export default {
     loaders: {
       scss: customSass
     }
+  },
+  generate: {
+    fallback: true
   }
 };
