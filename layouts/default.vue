@@ -47,14 +47,21 @@ export default {
   color: $white;
 }
 .copyright {
-  color: $black;
+  color: $white;
 }
 footer {
+  background: $primary;
+  padding: $padding-md;
   p {
     font-size: 16px;
-    color: $black;
+    color: $white;
     margin-bottom: 0.5rem;
     text-align: center;
+  }
+  a {
+    color: $secondary;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 }
 </style>

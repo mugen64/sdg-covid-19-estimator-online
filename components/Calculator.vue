@@ -157,7 +157,7 @@ export default {
   &__fieldset {
     margin-bottom: $padding-md;
     legend {
-      font-weight: 100;
+      // font-weight: 200;
       text-transform: uppercase;
     }
   }
@@ -166,7 +166,7 @@ export default {
     flex-flow: column;
     padding: $padding-sm;
     // padding-bottom: none;
-    background-color: $bg-light;
+    // background-color: $bg-light;
     margin-bottom: $padding-sm;
     input,
     select {
