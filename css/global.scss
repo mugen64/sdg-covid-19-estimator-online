@@ -32,7 +32,7 @@ a {
   }
 }
 
-.btn, button, input[type=button] {
+.btn, button, input[type=button], input[type=submit] {
   background: $primary;
   border:  1px solid $primary-dark;
   color: $white;
