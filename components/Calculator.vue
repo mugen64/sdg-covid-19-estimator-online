@@ -10,7 +10,7 @@
         <div class="calculator__field">
           <div class="calculator__input">
             <label for="name">Name</label>
-            <select v-model="model.region.name" name="name">
+            <select id="name" v-model="model.region.name">
               <option
                 v-for="v in regions"
                 :key="`region-name-option-${v}`"
@@ -75,11 +75,11 @@
         <legend>Estimation Parameters</legend>
         <div class="calculator__field">
           <div class="calculator__input">
-            <label for="period-type">Period Type</label>
+            <label for="periodType">Period Type</label>
             <select
+              id="periodType"
               v-model="model.periodType"
               :data-period-type="model.periodType"
-              name="period-type"
             >
               <option
                 v-for="v in periodTypes"

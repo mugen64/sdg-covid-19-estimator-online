@@ -1,7 +1,13 @@
 <template>
   <div class="calculator__input">
     <label :for="fieldName">{{ label }}</label>
-    <input v-model="model" :type="type" :name="fieldName" v-bind="$attrs" />
+    <input
+      :id="fieldName"
+      v-model="model"
+      :type="type"
+      :name="fieldName"
+      v-bind="$attrs"
+    />
   </div>
 </template>
 <script>
@@ -38,7 +44,9 @@ export default {
       }
     },
     fieldName() {
-      return this.name || this.label.split().join('-');
+      const v = (this.name || this.label).split(' ');
+      // console.log(v, v.join('_'));
+      return v.join('_');
     }
   }
 };
