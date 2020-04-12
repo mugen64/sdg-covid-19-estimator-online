@@ -99,10 +99,10 @@
           />
         </div>
       </fieldset>
-      <input
+      <button
         type="submit"
-        value="Do Estimation"
-        data-goestimate
+        value="Estimation"
+        data-go-estimate
         v-text="`Do Estimation`"
       />
     </form>

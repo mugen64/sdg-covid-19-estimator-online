@@ -31,7 +31,7 @@ describe('Calculator UI', () => {
         true
       );
       expect(wrapper.find('select[data-period-type]').exists()).toBe(true);
-      expect(wrapper.find('input[data-goestimate]').exists()).toBe(true);
+      expect(wrapper.find('button[data-go-estimate]').exists()).toBe(true);
     }
   );
 });
