@@ -32,6 +32,17 @@ a {
   }
 }
 
+.btn, button, input[type=button] {
+  background: $primary;
+  border:  1px solid $primary-dark;
+  color: $primary-light;
+  padding: 0.65em 0.6em;
+  cursor: pointer;
+  &:hover {
+    background: $primary-dark;
+  }
+}
+
 .spacer--hr {
     flex-grow: 1;
     display: inline-block;
@@ -50,7 +61,7 @@ a {
    display: flex;
    max-height: 90px;
    width: 100%;
-   overflow: hidden;
+  //  overflow: hidden;
    background-color: $primary;
   }
 
