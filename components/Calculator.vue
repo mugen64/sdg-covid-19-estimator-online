@@ -149,6 +149,10 @@ export default {
       margin-left: auto;
       display: block;
     }
+    p {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
   }
   .result {
     text-align: right;
@@ -159,7 +163,12 @@ export default {
     legend {
       // font-weight: 200;
       text-transform: uppercase;
+      font-weight: bold;
     }
+  }
+  label {
+    text-transform: uppercase;
+    font-weight: bold;
   }
   &__input {
     display: flex;
@@ -176,6 +185,8 @@ export default {
       background: none;
       box-shadow: none;
       border-bottom: 1px solid $black;
+      font-size: 18px;
+      font-weight: 400;
 
       &:focus {
         outline: 0;

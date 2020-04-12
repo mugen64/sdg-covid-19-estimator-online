@@ -3,7 +3,7 @@
     <header class="app__bar">
       <h1 class="app__title">
         <span class="covid19">COVID-19</span>
-        <span class="text--secondary font-weight--4h">Estimator</span>
+        <span class="text--secondary font--bold">Estimator</span>
       </h1>
     </header>
     <main class="app__content">

@@ -7,9 +7,9 @@
         <h4 class="estimate__card__title">
           Currently Infected
         </h4>
-        <h5 class="estimate__card__subtitle">
+        <!-- <h5 class="estimate__card__subtitle">
           (= Reported Cases x {{ multiple }})
-        </h5>
+        </h5> -->
         <div class="estimate__card__value">
           {{ estimate.currentlyInfected | seperator }}
         </div>
@@ -137,7 +137,7 @@ export default {
 
     &__value {
       font-size: 1.5em;
-      font-weight: 100;
+      font-weight: 400;
     }
   }
 }
