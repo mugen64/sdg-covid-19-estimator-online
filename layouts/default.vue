@@ -15,7 +15,7 @@
         <span class="font-weight--bold">#BuildForSDG Challenge 2020</span>
       </p>
       <p>
-        Copyright &copy; {{ years }}
+        <span class="copyright">Copyright &copy; {{ years }}</span>
         <a
           href="https://github.com/mugen64"
           target="_blank"
@@ -46,8 +46,13 @@ export default {
   font-size: 1.75rem;
   color: $white;
 }
+.copyright {
+  color: $black;
+}
 footer {
   p {
+    font-size: 16px;
+    color: $black;
     margin-bottom: 0.5rem;
     text-align: center;
   }
