@@ -2,7 +2,9 @@
   <article class="calculator" aria-label="Estimation Form">
     <!-- <h3>Change The Values</h3>
      -->
-    <form role="form" @submit.prevent="submit()">
+    <form class="box-shadow" role="form" @submit.prevent="submit()">
+      <p>Edit Values Below And Click Estimate</p>
+      <br />
       <fieldset class="calculator__fieldset">
         <legend>Region Data</legend>
         <div class="calculator__field">
@@ -143,7 +145,6 @@ export default {
     padding: calc(#{$padding-sm} * 2);
     max-width: 360px;
     margin: 0 auto;
-
     button {
       margin-left: auto;
       display: block;
@@ -191,6 +192,17 @@ export default {
       select {
         border-bottom: 1px solid $secondary;
       }
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  .calculator {
+    width: inherit;
+    form {
+      max-width: 480px;
+      min-width: 480px;
+      margin: 0;
     }
   }
 }
