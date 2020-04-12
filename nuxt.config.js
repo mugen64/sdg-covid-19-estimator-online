@@ -43,7 +43,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/logic.js'],
+  plugins: ['~/plugins/logic.js', '~/plugins/vue-inject.js'],
   /*
    ** Nuxt.js dev-modules
    */

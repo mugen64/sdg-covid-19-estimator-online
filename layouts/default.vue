@@ -2,61 +2,54 @@
   <div class="app">
     <header class="app__bar">
       <h1 class="app__title">
-        COVID-19 Estimator Online - SDG
+        <span class="covid19">COVID-19</span>
+        <span class="text--secondary font-weight--4h">Estimator</span>
       </h1>
     </header>
     <main class="app__content">
       <nuxt />
     </main>
+    <footer class="app__footer">
+      <p>
+        Created For
+        <span class="font-weight--bold">#BuildForSDG Challenge 2020</span>
+      </p>
+      <p>
+        Copyright &copy; {{ years }}
+        <a
+          href="https://github.com/mugen64"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Faridah Namutebi</a
+        >
+      </p>
+    </footer>
   </div>
 </template>
-
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+<script>
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    };
+  },
+  computed: {
+    years() {
+      if (this.year <= 2020) return `${this.year}`;
+      return `2020 - ${this.year}`;
+    }
+  }
+};
+</script>
+<style lang="scss">
+.covid19 {
+  font-size: 1.75rem;
+  color: $white;
 }
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+footer {
+  p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
 }
 </style>
