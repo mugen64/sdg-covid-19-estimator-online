@@ -145,7 +145,8 @@ export default {
     padding: calc(#{$padding-sm} * 2);
     max-width: 360px;
     margin: 0 auto;
-    input[type='submit'] {
+    input[type='submit'],
+    button {
       margin-left: auto;
       display: block;
     }
